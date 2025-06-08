@@ -1,0 +1,401 @@
+<!-- 
+
+ bg - #f5f5f7
+ nav - #fafafc
+ secondary - #ede7fd
+ text - #1d1d20
+ highlighted text - #72777c
+ button color - #0071e3
+ button font color - #f1f6fd
+ Project boxes color - #ddecfd
+ box inside text color primary black - #1d1d20
+ box inside text colro secondary white - #feffff
+ 
+ -->
+
+
+<!DOCTYPE html class="scroll-smooth overflow-x-hidden ">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind compiled CSS -->
+  <link rel="stylesheet" href="output.css" />
+
+</head>
+
+<body class="bg-[#f5f5f7] text-[#1d1d20] overflow-x-hidden">
+    <header>
+        
+        <nav class="top-0 z-50 flex justify-around items-center bg-[#fafafc] h-[80px] max-w-[100vw]" id="Home">
+          <button class="md:hidden relative left-[10px] text-[#1d1d20]" id="menu-toggle">
+<img  src="hamburger.svg" class="w-6 h-6 cursor-pointer alt=""></button>
+<div class="md:hidden flex-1 text-center text-[#1d1d20] font-semibold text-2xl">Ravinder's Portfolio</div>
+            <div class="right">
+                <ul id="nav-links" class=" hidden flex-col absolute top-[80px] left-0 w-full bg-[#fafafc] border-t border-gray-200 py-4 justify-center md:flex md:flex-row md:static md:w-auto md:py-0 md:shadow-none md:border-none text-[#1d1d20]">
+                    <li class="w-full list-none mx-[24px]"><a class="block px-6 no-underline  cursor-pointer hover:text-[#bcbcbc] hover:text-[1.1rem]" href="#Home">Home</a></li>
+                    <li class="w-full list-none mx-[24px]"><a class="block px-6 no-underline  cursor-pointer hover:text-[#bcbcbc] hover:text-[1.1rem]" href="#About">About</a></li>
+                    <li class="w-full list-none mx-[24px]"><a class="block px-6 no-underline  cursor-pointer hover:text-[#bcbcbc] hover:text-[1.1rem]" href="#Projects">Projects</a></li>
+                    <li class="w-full list-none mx-[24px]"><a class="block px-6 no-underline  cursor-pointer hover:text-[#bcbcbc] hover:text-[1.1rem]" href="#Skills">Skills</a></li>
+                    <li class="w-full list-none mx-[24px]"><a class="block px-6 no-underline  cursor-pointer hover:text-[#bcbcbc] hover:text-[1.1rem]" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="w-full text-[3rem] font-bold mt-10 ml-4 md:ml-[8rem] md:block hidden "> Ravinder's Portfolio</div>
+      <section id="About" class="md:flex md:justify-around md:items-center md:my-[20px] my-[50px] mx-auto">
+  <div class="md:w-[40%] w-[90%] font-bold text-[2rem] md:mx-[80px]  mx-auto">
+    <span class=" text-[#72777c] font-bold">Computing Science student with excellent communication skills and practical experience in software and web development.
+</span>
+
+    <div class="md:mt-11 flex gap-4">
+      <a href="resume.pdf" target="_blank"  class="cursor-pointer mt-[45px]  w-[200px] bg-[#0071e3] text-[#f1f6fd] text-center rounded-[20px] text-[20px] px-2 py-1">
+        Download Resume
+      </a>
+      <a href="https://github.com/Ravi200603" target="_blank" class="mt-[45px] w-[200px] text-center bg-[#0071e3] text-[#f1f6fd] border-2 border-[#a7aabc] rounded-[20px] text-[20px] px-2 py-1 inline-block">
+        Github Profile
+      </a>
+    </div>
+  </div>
+
+  <!-- Right side -->
+  <div class="md:w-[30%] mt-10 w:[50%] md:mx-0">
+    <img 
+      src="image1.png" 
+      alt="" 
+      class="md:w-[90%] h-auto rounded-[280px] border-4 mx-auto md:mx-0"
+    />
+  </div>
+</section>
+<hr class="border-0 bg-black h-[2.5px] my-[40px] mx-[84px]">
+
+
+ <section id="Projects" class="md:max-w-[75vw] max-w-[90%] mx-auto my-[60px]">
+  <div class="mb-8">
+    <h1 class="font-bold text-[3rem]">Projects</h1>
+    <span class="text-[#72777c]">Things I have worked on</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5">
+    <!-- Project 1 -->
+<div class="bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="quizzy.png" alt="Quizzy Mobile App" class="w-full mx-auto mb-4 md:h-[420px]">
+  <div class="font-bold text-2xl text-[#1d1d20]">Quizzy- The Mobile App</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Developed an interactive quiz application using Android Studio (Java) with biometric and password-based authentication. Key features include score calculation, review attempts, and a secure login system.</div>
+  <span class="text-[0.8rem] text-[#72777c] mb-[20px] inline-block mt-4">Preview Not Available</span>
+</div>
+
+<!-- Project 2 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="portfolio.png" alt="Portfolio Website Icon" class="w-full md:h-[420px] mx-auto mb-4">
+  <div class="font-bold text-2xl text-[#1d1d20]">Portfolio Website</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Built a professional portfolio website using Tailwind CSS, showcasing all completed projects hosted on GitHub.</div>
+  <a href="#Home" class="text-[0.8rem] text-[#5a8ef7] mb-[20px] inline-block mt-4 hover:text-[#3e5aa7]">View Project</a>
+</div>
+
+<!-- Project 3 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="currencyConverter.png" alt="Currency Converter Icon" class="w-full md:h-[438px]  mx-auto mb-4">
+  <div class="font-bold text-2xl text-[#1d1d20]">Currency Converter</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Created a web-based currency converter that utilizes ExchangeRate-API to fetch real-time exchange rates and display
+converted values.</div>
+  <a href="https://ravi200603.github.io/currencyConverter/" class="text-[0.8rem] text-[#5a8ef7] mb-[20px] inline-block mt-4 hover:text-[#3e5aa7]">View Project</a>
+</div>
+
+<!-- Project 4 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="passwordGenerator.png" alt="Password Generator Icon" class="mt-5 w-full md:h-[420px] mx-auto mb-4">
+  <div class="font-bold text-2xl text-[#1d1d20]">Password Generator</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Designed a secure password generator using custom hooks, APIs, React.js, and Tailwind CSS.</div>
+  <a href="https://ravi200603.github.io/password-generator/" class="text-[0.8rem] text-[#5a8ef7] mb-[20px] inline-block mt-4 hover:text-[#3e5aa7]">View Project</a>
+</div>
+
+<!-- Project 5 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105]
+">
+  <img src="hotelManagement.png" alt="Hotel Management Website Icon" class="w-full  md:h-[420px] mx-auto mb-4"> 
+  <div class="font-bold text-2xl text-[#1d1d20]">Hotel Management Website</div>
+  <div class="text-[#1d1d20] px-3 text-sm">Designed a hotel booking and facility management website featuring real-time room availability, booking system, and a
+contact form</div>
+  <a href="https://ravi200603.github.io/HotelModelWeb/" class="text-[0.8rem] text-[#5a8ef7] mb-[20px] inline-block mt-4 hover:text-[#3e5aa7]">View Project</a>
+</div>
+
+<!-- Project 6 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105]
+">
+  <img src="vadodaraMeals.png" class="w-full mb-4 md:h-[420px] mx-auto "alt="Vadodara Meals Site Icon">
+  <div class="font-bold text-2xl text-[#1d1d20] ">Vadodara Meals Site</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Developed a restaurant site using HTML, CSS, and JavaScript.</div>
+  <a href="https://ravi200603.github.io/VadodaraMeals/" class="text-[0.8rem] text-[#5a8ef7] mb-[20px] inline-block mt-4 hover:text-[#3e5aa7]">View Project</a>
+</div>
+
+<!-- Project 7 -->
+<div class="bg bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="PlagForm.png" alt="TRU Plagiarism Form Icon" class="w-full md:h-[420px] mx-auto mb-4">
+  <div class="font-bold text-2xl text-[#1d1d20]">TRU Plagiarism Form</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Developed a Windows Form application using C# and .NET Framework with integrated SQL database for storing input data. Includes input validation and CRUD operations.</div>
+  <span class="text-[0.8rem] text-[#72777c] mb-[20px] inline-block mt-4">Preview Not Available</span>
+</div>
+
+<!-- Project 8 -->
+<div class=" bg-[#fafafc] border-0 rounded-[10px] font-bold text-center transform transition-transform duration-500 hover:scale-105
+">
+  <img src="jarvis.png" alt="Jarvis Assistant Icon" class="md:h-[420px] w-full mx-auto mb-4">
+  <div class="font-bold text-2xl text-[#1d1d20]">Jarvis Assistant</div>
+  <div class="text-[#1d1d20] px-5 text-sm">Built a Python-based voice assistant using SpeechRecognition and pyttsx3 for speech interaction. Integrated with OS
+commands, Wikipedia API, and a MySQL-based password manager.</div>
+  <span class="text-[0.8rem] text-[#72777c] mb-[20px] inline-block mt-4">Preview Not Available</span>
+</div>
+
+  </div>
+</section>
+<hr class="border-0 bg-black h-[2.5px] my-[40px] mx-[84px]">
+
+<section id="Skills">
+  <div class="text-[3rem] font-bold text-[#1d1d20] ml-[30px] md:ml-[100px]">Skills</div>
+<div class="skillsboxes flex md:flex-row flex-col justify-between ">
+  <!-- Programming Languages -->
+  <div class="w-[90%] my-[10vh] font-bold text-[1.5rem] rounded-4xl grid md:grid-cols-5 grid-cols-2 md:w-[45%] gap-x-3 gap-y-5 bg-[#ddecfd] mx-auto py-[30px] px-[20px]">
+    <span class="md:col-span-5 col-span-2 text-center  mt-[20px]">Programming Languages</span>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="html.png" alt="">
+      <span class="mt-2">HTML</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="css.png" alt="">
+      <span class="mt-2">CSS</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="js.png" alt="">
+      <span class="mt-2">JavaScript</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="java.png" alt="">
+      <span class="mt-2">Java</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="python.png" alt="">
+      <span class="mt-2">Python</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4 mb-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="C.png" alt="">
+      <span class="mt-2">C</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="123.png" alt="">
+      <span class="mt-2">C#</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="DSA.png" alt="">
+      <span class="mt-2">DSA</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="Marie.png" alt="">
+      <span class="mt-2">Marie</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[1rem] mt-4">
+      <img class="w-20  rounded-2xl transition-transform duration-500 hover:scale-110
+" src="SQL.png" alt="">
+      <span class="mt-2">SQL</span>
+    </div>
+  </div>
+
+  <!-- Frameworks -->
+  <div class="my-[10vh] font-bold text-[1.5rem] rounded-4xl grid md:grid-cols-3 grid-cols-2 w-[90%] md:w-[35%] gap-x-3 gap-y-5 bg-[#ede7fd] mx-auto py-[30px] px-[20px]">
+    <span class="md:col-span-3 col-span-2 text-center  mt-[20px]">Frameworks</span>
+
+    <div class="flex flex-col items-center text-center text-[0.8rem] mt-4 mb-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="vite.png" alt="">
+      <span class="mt-2">Vite</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[0.8rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="react.png" alt="">
+      <span class="mt-2">React</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[0.8rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="node.png" alt="">
+      <span class="mt-2">Node</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[0.8rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="tailwind.png" alt="">
+      <span class="mt-2">Tailwind</span>
+    </div>
+
+    <div class="flex flex-col items-center text-center text-[0.8rem] mt-4">
+      <img class="w-20 rounded-2xl transition-transform duration-500 hover:scale-110
+" src="bootstrap.png" alt="">
+      <span class="mt-2">Bootstrap</span>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+</section>
+
+<hr class="border-0 bg-black h-[2.5px] my-[40px] mx-[84px]">
+
+<section id="contact" class="py-12">
+  <h2 class="text-[3rem] font-bold mt:5 md:ml-[7rem] ml-2 mb-2">Contact Me</h2>
+  <p class="mt:7 md:ml-[7rem] ml-2 text-[#72777c] md:mb-8 mb-2">
+    You're welcome to get in touch by completing the form below.
+  </p>
+
+
+  <form id="contactForm" method="POST" class=" ml-2 md:ml-[3.5rem] text-[#1d1d20] rounded-lg space-y-4 w-[90%] md:max-w-[50vw] p-6">
+    
+    <div>
+      <input
+      name="name"
+        class="w-full px-4 py-2 rounded-md text-[#1d1d20] placeholder-[#1d1d20] border border-[#86868b] focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        placeholder="Name"
+      />
+    </div>
+
+    <div>
+      
+      <input
+      name="email"
+        class="w-full px-4 py-2 rounded-md text-[#1d1d20] placeholder-[#1d1d20] border border-[#86868b] focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="email"
+        placeholder="Email"
+      />
+    </div>
+
+    <div>
+      <textarea
+      name="message"
+        rows="4"
+        class="w-full px-4 py-2 rounded-md text-[#1d1d20] placeholder-[#1d1d20] border border-[#86868b] focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Write your message here..."
+      ></textarea>
+    </div>
+
+      <button
+        type="submit"
+        class="bg-[#0071e3] text-white px-6 py-2 rounded-md font-semibold md:w-[47.5vw] w-[90%] mx-auto"
+      >
+        Send Message
+      </button>
+  </form>
+<!-- Responsive Toast Alert Box -->
+<div id="toastAlert" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-[#fafafc] border border-[#ede7fd] text-[#1d1d20] px-4 py-3 rounded-xl shadow-lg flex justify-between items-center gap-4 hidden z-50 w-[90%] max-w-[450px] sm:px-6 sm:py-4">
+  <span class="text-sm sm:text-base">Thanks for reaching out! <br> I will get back to you as soon as possible</span>
+  <button onclick="closeToast()" class="text-[#1d1d20] text-xl font-bold leading-none hover:text-red-500">&times;</button>
+</div>
+
+
+
+
+
+</section>
+
+<hr class="border-0 bg-black h-[2.5px] my-[40px] mx-[84px]">
+
+    </main>
+
+   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Computer Science</i> Student', 'to look for work to upskill Myself.'],
+            typeSpeed: 75,
+        });
+
+    </script>
+    <script>
+      var toggle = document.getElementById("menu-toggle")
+      var links = document.getElementById("nav-links")
+
+      toggle.addEventListener("click", ()=>{
+        links.classList.toggle("hidden");
+      })
+    </script>
+<script>
+  // Submit handler for contact form
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop default form redirect
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/ravisd740@gmail.com", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        showToast();
+        form.reset();
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("There was an error submitting the form.");
+      console.error(error);
+    });
+  });
+
+  // Show the toast alert
+  function showToast() {
+    const toast = document.getElementById("toastAlert");
+    toast.classList.remove("hidden");
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      toast.classList.add("hidden");
+    }, 5000);
+  }
+
+  // Close button for toast
+  function closeToast() {
+    document.getElementById("toastAlert").classList.add("hidden");
+  }
+</script>
+
+
+</body>
+
+</html>
