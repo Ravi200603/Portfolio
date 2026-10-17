@@ -62,7 +62,7 @@ export const projects = [
   {
     title: 'Hotel Management Website',
     description:
-      'Designed a hotel booking and facility management website featuring real-time room availability, booking system, and a contact form',
+      'Designed a hotel booking and facility management website featuring room availability, booking system, and a contact form',
     image: hotelManagement,
     alt: 'Hotel Management Website Icon',
     imgHeight: 'md:h-[420px]',
