@@ -1,5 +1,5 @@
 import profile from '../assets/image1.png'
-import resume from '../assets/Resume.pdf'
+import resume from '../assets/resume.pdf'
 
 export default function Hero() {
   return (
